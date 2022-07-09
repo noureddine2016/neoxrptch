@@ -25,7 +25,7 @@ exports.run = {
       text += '◦ *Database* : PostgreSQL\n'
       text += '◦ *Library* : Baileys v4.3.0\n'
       text += '◦ *DEVELOPER* : MOHAMED BELLA\n'
-      text += '◦ *Source* : https://Instagram'com/wox_bella\n\n'
+      text += '◦ *Source* : https://Instagram.com/wox_bella\n\n'
       text += 'If you find an error or want to upgrade premium plan contact the owner.'
       await client.sendList(m.chat, '', text, '', 'Tap!', [{
          rows
