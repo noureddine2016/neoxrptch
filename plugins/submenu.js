@@ -22,7 +22,7 @@ const submenu1 = prefix => {
 ◦  ${prefix}pin *link*
 ◦  ${prefix}tiktok *link*
 ◦  ${prefix}tikmp3 *link*
-◦  ${prefix}tikwm *link*
+◦  ${prefix}sticker *Repley to photo*
 ◦  ${prefix}twitter *link*
 ◦  ${prefix}ytmp3 *link*
 ◦  ${prefix}ytmp4 *link*`
