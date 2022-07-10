@@ -181,6 +181,35 @@ Socket = (...args) => {
 
 
 
+
+client.fakeStory = async (jid, text, caption) => {
+      let location = {
+         key: {
+            fromMe: false,
+            participant: `0@s.whatsapp.net`,
+            ...(jid ? {
+               remoteJid: 'status@broadcast'
+            } : {})
+         },
+         message: {
+            "imageMessage": {
+               "mimetype": "image/jpeg",
+               "caption": caption,
+               "jpegThumbnail": fs.readFileSync(`./media/images/thumb.jpg`)
+            }
+         }
+      }
+      return client.reply(jid, text, location)
+   }
+
+
+
+
+
+
+
+
+
 client.sendSticker = async (jid, path, quoted, options = {}) => { 
       const WSF = require('wa-sticker-formatter')
       let buffer = /^https?:\/\//.test(path) ? await (await fetch(path)).buffer() : Buffer.isBuffer(path) ? path : /^data:.*?\/.*?;base64,/i.test(path) ? Buffer.from(path.split`,` [1], 'base64') : Buffer.alloc(0)
