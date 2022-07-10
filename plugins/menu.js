@@ -13,8 +13,8 @@ exports.run = {
 ]
       let text = 'BELLA MOHAMED 😇.\n\n'
       text += '◦ *instagram* : https://instagram.com/wox_bella *(v2.2.0)*\n\n'
-      text += 'If you find an error or want to upgrade premium plan contact the owner.'
-      await client.sendList(m.chat, '', text, '', 'Tap!', [{
+      text += 'Ela konto talib/tilmid, Sift Lya *#bac*'
+      await client.sendList(m.chat, '', text, '', 'click!', [{
          rows
       }], m)
    },
