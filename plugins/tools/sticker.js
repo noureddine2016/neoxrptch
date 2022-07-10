@@ -12,8 +12,8 @@ exports.run = {
             if (/video/.test(type)) {
                if (q.seconds > 10) return client.reply(m.chat, Func.texted('bold', `Maximum video duration is 10 seconds.`), m)
                return await client.sendSticker(m.chat, img, m, {
-                  pack: exif.sk_pack,
-                  author: exif.sk_author
+                  pack: 'bella',
+                  author: 'mhmd'
                })
             } else if (/image/.test(type)) {
                return await client.sendSticker(m.chat, img, m, {
