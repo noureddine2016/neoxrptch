@@ -10,15 +10,15 @@ exports.run = {
          description: `  `
       }, {
          title: 'PHYSIQUES',
-         rowId: `${isPrefix}pc`,
+         rowId: `${isPrefix}menutype 1`,
          description: `  `
       }, {
          title: 'S.V.T',
-         rowId: `${isPrefix}svt`,
+         rowId: `${isPrefix}menutype 2`,
          description: `  `
       }, {
          title: 'PHYLOSOPHIE',
-         rowId: `${isPrefix}phylo`,
+         rowId: `${isPrefix}menutype 1`,
          description: ``
       }]
       let text = '*DOROSS 2BAC* ❤️🥰.\n\n'
