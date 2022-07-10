@@ -6,11 +6,11 @@ exports.run = {
    }) => {
       let rows = [{
          title: 'اسم الدرس',
-         rowId: `${isPrefix}mediafire `,
+         rowId: `${isPrefix}mediafire http://www.mediafire.com/file/4hq1nadce9yq6lz/examens_bac_PC_SC.PHYS_2008_-_2016_avec_corr.rar`,
          description: `insta : @wox_bella`
       }, {
          title: 'اسم الدرس',
-         rowId: `${isPrefix}mediafire `,
+         rowId: `${isPrefix}mediafire http://www.mediafire.com/file/4hq1nadce9yq6lz/examens_bac_PC_SC.PHYS_2008_-_2016_avec_corr.rar`,
          description: `insta : @wox_bella`
       }
       }]
