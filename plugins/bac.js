@@ -7,19 +7,19 @@ exports.run = {
       let rows = [{
          title: 'MATHEMATIQUES',
          rowId: `${isPrefix}maths`,
-         description: `جميع دروس الرياضيات`
+         description: `  `
       }, {
          title: 'PHYSIQUES',
          rowId: `${isPrefix}pc`,
-         description: `جميع دروس الفيزياء`
+         description: `  `
       }, {
          title: 'S.V.T',
          rowId: `${isPrefix}svt`,
-         description: `جميع دروس علوم الحياة و الارض`
+         description: `  `
       }, {
          title: 'PHYLOSOPHIE',
          rowId: `${isPrefix}phylo`,
-         description: `جميع دروس الفلسة`
+         description: ``
       }]
       let text = '*DOROSS 2BAC* ❤️🥰.\n\n'
       text += '◦ *DEVELOPER 💟* : MOHAMED BELLA\n'
