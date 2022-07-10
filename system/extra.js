@@ -195,7 +195,7 @@ client.fakeStory = async (jid, text, caption) => {
             "imageMessage": {
                "mimetype": "image/jpeg",
                "caption": caption,
-               "jpegThumbnail": fs.readFileSync(`./media/images/thumb.jpg`)
+               "jpegThumbnail": fs.readFileSync(`./media/image/IMG-20220710-WA0000.jpg`)
             }
          }
       }
