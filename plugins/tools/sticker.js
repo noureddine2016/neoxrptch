@@ -17,8 +17,8 @@ exports.run = {
                })
             } else if (/image/.test(type)) {
                return await client.sendSticker(m.chat, img, m, {
-                  pack: exif.sk_pack,
-                  author: exif.sk_author
+                  pack: 'bella',
+                  author: 'mohamed'
                })
             }
          } else {
@@ -28,16 +28,16 @@ exports.run = {
                let img = await q.download()
                if (!img) return client.reply(m.chat, global.status.wrong, m)
                return await client.sendSticker(m.chat, img, m, {
-                  pack: exif.sk_pack,
-                  author: exif.sk_author
+                  pack: 'bella',
+                  author: 'mohamed'
                })
             } else if (/video/.test(mime)) {
                if ((q.msg || q).seconds > 10) return client.reply(m.chat, Func.texted('bold', `Maximum video duration is 10 seconds.`), m)
                let img = await q.download()
                if (!img) return client.reply(m.chat, global.status.wrong, m)
                return await client.sendSticker(m.chat, img, m, {
-                  pack: exif.sk_pack,
-                  author: exif.sk_author
+                  pack: 'bella ❤️',
+                  author: 'med '
                })
             } else client.reply(m.chat, Func.texted('bold', `Stress ??`), m)
          }
