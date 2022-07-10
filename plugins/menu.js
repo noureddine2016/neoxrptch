@@ -5,8 +5,8 @@ exports.run = {
       isPrefix
    }) => {
       let rows = [{
-         title: 'DOWNLOADER',
-         rowId: `${isPrefix}menutype 1`,
+         title: 'TEST',
+         rowId: `${isPrefix}maths`,
          description: ``
       }, {
          title: 'GROUP TOOLS',
