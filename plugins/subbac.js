@@ -15,19 +15,19 @@ exports.run = {
 }
 
 const maths = prefix => {
-  /* return `
+   return `
 أختر رايطاً و اعد إرساله لى 
  🔗
  🔗
  🔗
  🔗
  🔗 http://www.mediafire.com/file/4hq1nadce9yq6lz/examens_bac_PC_SC.PHYS_2008_-_2016_avec_corr.rar
-  ` */
+  ` 
 
 
 
 
-let rows = [{
+/*let rows = [{
          title: 'DOWNLOADER',
          rowId: `${isPrefix}menutype 1`,
          description: ``
@@ -52,7 +52,7 @@ let rows = [{
       text += 'If you find an error or want to upgrade premium plan contact the owner.'
       await client.sendList(m.chat, '', text, '', 'Tap!', [{
          rows
-      }], m)
+      }], m) */
 
 
 
@@ -61,7 +61,7 @@ let rows = [{
 
 
 
-}
+} 
 
 const pc = prefix => {
    return `
