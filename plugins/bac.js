@@ -6,26 +6,24 @@ exports.run = {
    }) => {
       let rows = [{
          title: 'MATHEMATIQUES',
-         rowId: `${isPrefix}lang 1`,
-         description: ``
+         rowId: `${isPrefix}maths`,
+         description: `جميع دروس الرياضيات`
       }, {
          title: 'PHYSIQUES',
-         rowId: `${isPrefix}lang 2`,
-         description: ``
+         rowId: `${isPrefix}pc`,
+         description: `جميع دروس الفيزياء`
       }, {
          title: 'S.V.T',
-         rowId: `${isPrefix}lang 3`,
-         description: ``
+         rowId: `${isPrefix}svt`,
+         description: `جميع دروس علوم الحياة و الارض`
       }, {
          title: 'PHYLOSOPHIE',
-         rowId: `${isPrefix}lang 4`,
-         description: ``
+         rowId: `${isPrefix}phylo`,
+         description: `جميع دروس الفلسة`
       }]
       let text = '*DOROSS 2BAC* ❤️🥰.\n\n'
-      text += '◦ *Database* : PostgreSQL\n'
-      text += '◦ *Library* : Baileys v4.3.0\n'
-      text += '◦ *DEVELOPER* : MOHAMED BELLA\n'
-      text += '◦ *Source* : https://Instagram.com/wox_bella\n\n'
+      text += '◦ *DEVELOPER 💟* : MOHAMED BELLA\n'
+      text += '◦ *FOLLOW ME 🌚* : https://Instagram.com/wox_bella\n\n'
       text += 'If you find an error or want to upgrade premium plan contact the owner.'
       await client.sendList(m.chat, '', text, '', 'Tap!', [{
          rows
