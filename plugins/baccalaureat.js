@@ -1,29 +1,32 @@
-
 exports.run = {
-   usage: ['bac'],
+   usage: ['menu', 'help', 'bot'],
    async: async (m, {
       client,
       isPrefix
    }) => {
-      let rows = [
-         {
-         title: 'L',
-         rowId: `${isPrefix}mediafire https://www.mediafire.com/file/4hq1nadce9yq6lz/examens_bac_PC_SC.PHYS_2008_-_2016_avec_corr.rar`,
-         description: `insta : @wox_bella`
-         },
-
-         {
-         title: 'LEÇON 2',
-         rowId: `${isPrefix}mediafire https://www.mediafire.com/file/4hq1nadce9yq6lz/examens_bac_PC_SC.PHYS_2008_-_2016_avec_corr.rar`,
-         description: `insta : @wox_bella`
-         }
-
-]
-      let text = '💟 *MATHEMATIQUES* ❤️😇\n\n'
-      text += '◦ *💟DEVELOPER* : *MOHAMED BELLA*\n'
-      text += '◦ *💟INSTAGRAM* : https://instagram.com/wox_bella *(v2.2.0)*\n\n'
+      let rows = [{
+         title: '🩸 MATHEMATIQUES ',
+         rowId: `${isPrefix}maths`,
+         description: ``
+      }, {
+         title: '🩸 PHYSIQUES',
+         rowId: `${isPrefix}pc`,
+         description: ``
+      }, {
+         title: '🩸 SVT',
+         rowId: `${isPrefix}svt`,
+         description: ``
+      }, {
+         title: '🩸 PHYLOSOPHIE',
+         rowId: `${isPrefix}phylo`,
+         description: ``
+      }]
+      let text = 'لي يتم إنشاء هذا البوت لاية اغراض تجارية ، بل لمساعدة الطلاب في دراستهم و إيصال المعلومة اليهم\n\n'
+      text += '◦ *DEVELOPER* : محمد بلا\n'
+      text += '◦ *🟣FACEBOOK* : https://www.facebook.com/Bella.lewox\n'
+      text += '◦ *🟣INSTAGRAM* : https://www.instagram.com/wox_bella *(v2.2.0)*\n\n'
       text += 'If you find an error or want to upgrade premium plan contact the owner.'
-      await client.sendList(m.chat, '', text, '', 'إضغط هنا!', [{
+      await client.sendList(m.chat, '', text, '', 'Tap!', [{
          rows
       }], m)
    },
