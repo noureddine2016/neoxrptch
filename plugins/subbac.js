@@ -1,5 +1,5 @@
 exports.run = {
-   usage: ['menutype'],
+   usage: ['lang'],
    async: async (m, {
       client,
       args,
@@ -15,25 +15,49 @@ exports.run = {
 }
 
 const maths = prefix => {
-   return ` 
-  🔗 http://www.mediafire.com/file/4hq1nadce9yq6lz/examens_bac_PC_SC.PHYS_2008_-_2016_avec_corr.rar
+   return `
+أختر رايطاً و اعد إرساله لى 
+ 🔗
+ 🔗
+ 🔗
+ 🔗
+ 🔗 http://www.mediafire.com/file/4hq1nadce9yq6lz/examens_bac_PC_SC.PHYS_2008_-_2016_avec_corr.rar
   `
 }
 
 const pc = prefix => {
    return `
-    🔗 
-   `
+أختر رايطاً و اعد إرساله لى 
+ 🔗
+ 🔗
+ 🔗
+ 🔗
+ 🔗 http://www.mediafire.com/file/4hq1nadce9yq6lz/examens_bac_PC_SC.PHYS_2008_-_2016_avec_corr.rar
+  `
 }
 
 const svt = prefix => {
+   
    return `
- 🔗 
-
-   `
+أختر رايطاً و اعد إرساله لى 
+ 🔗
+ 🔗
+ 🔗
+ 🔗
+ 🔗 http://www.mediafire.com/file/4hq1nadce9yq6lz/examens_bac_PC_SC.PHYS_2008_-_2016_avec_corr.rar
+  `
 }
 
 const phylo = prefix => {
-   return `◦ 
-◦  `
-}
+
+return `
+أختر رايطاً و اعد إرساله لى 
+ 🔗
+ 🔗
+ 🔗
+ 🔗
+ 🔗 http://www.mediafire.com/file/4hq1nadce9yq6lz/examens_bac_PC_SC.PHYS_2008_-_2016_avec_corr.rar
+  `
+
+
+   }
