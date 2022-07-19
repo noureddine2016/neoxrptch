@@ -60,8 +60,8 @@ exports.run = {
          title : 'احسن ملخص لدرس الغير مجزوءة الوضع البشري / الدقيقة 90',
          rowId: `https://www.youtube.com/watch?v=0SeudX37-Wg&ab_channel=%D9%85%D9%88%D9%84%D8%A7%D9%84%D9%81%D9%84%D8%B3%D9%81%D8%A9molfalsafa`,
          description: `insta : @wox_bella`
-         },
-          {
+         }
+          /*{
          title : '',
          rowId: ``,
          description: `insta : @wox_bella`
@@ -101,7 +101,7 @@ exports.run = {
          rowId: ``,
          description: `insta : @wox_bella`
          },
-
+*/
   
 
 ]
