@@ -16,7 +16,13 @@ exports.run = {
          title: '🩸 SVT',
          rowId: `${isPrefix}svt`,
          description: ``
-      }, {
+      }, 
+         {
+         title: '🩸 kotob',
+         rowId: `${isPrefix}book`,
+         description: `kotob pdf`
+      },
+        {
          title: '🩸 PHYLOSOPHIE',
          rowId: `${isPrefix}phylo`,
          description: ``
