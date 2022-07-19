@@ -11,6 +11,11 @@ exports.run = {
          description: `insta : @wox_bella`
          },
         {
+         title: 'poly YASSER TARFAOUI préparation médecine 2021',
+         rowId: `${isPrefix}mediafire https://www.mediafire.com/file/hsknc9prucery85/poly_YASSER_TARFAOUI_pr%25C3%25A9paration_m%25C3%25A9decine_2021.pdf/file`,
+        description: `insta : @wox_bella`
+         },
+         {
          title: '1èrePartieMathRédian',
          rowId: `${isPrefix}mediafire https://www.mediafire.com/file/drgz49nx1avz9uv/1%C3%A8rePartieMathR%C3%A9dian.pdf/file`,
         description: `insta : @wox_bella`
