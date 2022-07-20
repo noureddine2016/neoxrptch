@@ -1,5 +1,5 @@
 exports.run = {
-   usage: ['menu'],
+   usage: ['menu','mo3jam'],
    async: async (m, {
       client,
       text,
@@ -19,7 +19,17 @@ exports.run = {
        client.reply(m.chat, `bot dyl s7ab bac sf  .bac`, m)
        
       }
-     
+      
+      // urbn 
+      if (command == 'mo3jam') {
+       
+       client.reply(m.chat, `hmmmmm.........`, m)
+      if (!text) return client.reply(m.chat, Func.example(isPrefix, command, command != 'artinama' ? 'yntkts' : 'wildan'), m)
+      let json = await scrap.mo3jam(text)
+      command != 'artinama' ? client.reply(m.chat, `${json.data.content}`, m) : client.reply(m.chat, `${json.data.content}`, m)
+    
+       
+      }
      
      // ________________________________________________
      
@@ -32,3 +42,7 @@ exports.run = {
    cache: true,
    location: __filename
 }
+
+
+
+         
