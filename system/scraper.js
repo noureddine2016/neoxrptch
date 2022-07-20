@@ -34,6 +34,38 @@ module.exports = class Scraper {
       })
    }
    
+   
+    mo3jam(q) {
+      return new Promise(async (resolve, reject) => {
+         try {
+            let html = await (await axios.get('https://ar.mo3jam.com/term/' + q)).data
+            let $ = cheerio.load(html)
+            let content = [],
+               author = []
+            $('div.def-body').each((i, e) => content.push($(e).text()))
+ 
+            if (content.lenght == 0 || author.lengh == 0) return resolve({
+               creator: global.creator,
+               status: false
+            })
+            resolve({
+               creator: global.creator,
+               status: true,
+               data: {
+                  content: content[0].trim(),
+                  author: author[0].trim()
+               }
+            })
+         } catch (e) {
+            console.log(e)
+            resolve({
+               creator: global.creator,
+               status: false
+            })
+         }
+      })
+   }
+   
    /* URL Shortener
     * @param {String} url
     */
