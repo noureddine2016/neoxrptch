@@ -4,17 +4,10 @@ exports.run = {
       client,
       isPrefix
    }) => {
-      let rows = [{
-         title: '🩸 MATHEMATIQUES ',
-         rowId: `${isPrefix}maths`,
-         description: ``
-      }, {
+      let rows = [
+       {
          title: '🩸 PHYSIQUES',
          rowId: `${isPrefix}pc`,
-         description: ``
-      }, {
-         title: '🩸 SVT',
-         rowId: `${isPrefix}svt`,
          description: ``
       }, 
          {
