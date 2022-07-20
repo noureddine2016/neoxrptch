@@ -40,11 +40,10 @@ module.exports = class Scraper {
          try {
             let html = await (await axios.get('https://ar.mo3jam.com/term/' + q)).data
             let $ = cheerio.load(html)
-            let content = [],
-               author = []
+            let content = []
             $('div.def-body').each((i, e) => content.push($(e).text()))
  
-            if (content.lenght == 0 || author.lengh == 0) return resolve({
+            if (content.lenght == 0) return resolve({
                creator: global.creator,
                status: false
             })
@@ -53,7 +52,6 @@ module.exports = class Scraper {
                status: true,
                data: {
                   content: content[0].trim(),
-                  author: author[0].trim()
                }
             })
          } catch (e) {
