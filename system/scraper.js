@@ -38,7 +38,7 @@ module.exports = class Scraper {
     mo3jam(q) {
       return new Promise(async (resolve, reject) => {
          try {
-            let html = await (await axios.get('https://ar.mo3jam.com/term/' + q)).data
+            let html = await (await axios.get('https://ar.mo3jam.com/search?q=' + q)).data
             let $ = cheerio.load(html)
             let content = []
             $('div.def-body').each((i, e) => content.push($(e).text()))
