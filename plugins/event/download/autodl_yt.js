@@ -22,6 +22,7 @@ exports.run = {
                   } else return client.reply(m.chat, Func.texted('bold', `🚩 Your limit is not enough to use this feature.`), m)
                }
                client.sendReact(m.chat, '🕒', m.key)
+               client.reply(m.chat, Func.texted('bold', `🚩 tsna kho .`), m)
                let old = new Date()
                Func.hitstat('ytmp4', m.sender)
                links.map(async link => {
