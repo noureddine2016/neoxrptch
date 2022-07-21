@@ -3,25 +3,25 @@ exports.run = {
    usage: ['rx', 'rex'],
    async: async (m, {
       client,
-      args,
+      text,
       isPrefix,
       command
    }) => {
       try {
-         if (!args) return client.reply(m.chat, Func.example(isPrefix, command, 'https://www.mediafire.com/file/1fqjqg7e8e2v3ao/YOWA.v8.87_By.SamMods.apk/file'), m)
+         if (!args) return client.reply(m.chat, Func.example(isPrefix, command, 'FB'), m)
          client.sendReact(m.chat, '🕒', m.key)
-         let json = await Api.rexdl(args)
+         let json = await Api.rexdl(text)
          if (!json.status) return client.reply(m.chat, Func.jsonFormat(json), m)
-         let text = `乂  *R E X D L*\n\n`
-         text += '	◦  *Name* : ' + json.data.name + '\n'
-         text += '	◦  *category* : ' + json.data.category + '\n'
-         text += '	◦  *publish* : ' + json.data.publish + '\n'
-         text += '	◦  *desc* : ' + json.data.desc + '\n'
-         text += '	◦  *url* : ' + json.data.url + '\n\n'
-         text += global.footer
+         let dt = `乂  *R E X D L*\n\n`
+         dt += '	◦  *Name* : ' + json.data.name + '\n'
+         dt += '	◦  *category* : ' + json.data.category + '\n'
+         dt += '	◦  *publish* : ' + json.data.publish + '\n'
+         dt += '	◦  *desc* : ' + json.data.desc + '\n'
+         dt += '	◦  *url* : ' + json.data.url + '\n\n'
+         dt += global.footer
        //  let chSize = Func.sizeLimit(json.data.size, global.max_upload)
          
-        client.reply(m.chat, text, m)
+        client.reply(m.chat, dt, m)
       } catch {
          return client.reply(m.chat, global.status.error, m)
       }
