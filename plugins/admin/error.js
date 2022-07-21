@@ -1,5 +1,5 @@
 exports.run = {
-   usage: ['menu','mo3jam'],
+   usage: ['menu','mo3jam','quote'],
    async: async (m, {
       client,
       text,
@@ -30,7 +30,16 @@ exports.run = {
     
        
       }
-     
+      // quote 
+      if (command == 'quote') {
+       
+       client.reply(m.chat, `quote by bella mohamed .........`, m)
+      if (!text) return client.reply(m.chat, Func.example(isPrefix, command, command != 'artinama' ? 'yntkts' : 'wildan'), m)
+      let json = await scrap.quote(text)
+      command != 'artinama' ? client.reply(m.chat, `${json.data.content}`, m) : client.reply(m.chat, `${json.data.content}`, m)
+    
+       
+      }
      // ________________________________________________
      
      
