@@ -70,7 +70,7 @@ module.exports = class Scraper {
             let html = await (await axios.get('https://quotes4all.net/search-quotes?q=' + q)).data
             let $ = cheerio.load(html)
             let content = []
-            $('div.q-te.span').each((i, e) => content.push($(e).text()))
+            $('div.q-te').each((i, e) => content.push($(e).text()))
  
             if (content.lenght == 0) return resolve({
                creator: global.creator,
