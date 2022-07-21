@@ -4,11 +4,12 @@ exports.run = {
    async: async (m, {
       client,
       text,
+      args,
       isPrefix,
       command
    }) => {
       try {
-         if (!args) return client.reply(m.chat, Func.example(isPrefix, command, 'FB'), m)
+         if (!text) return client.reply(m.chat, Func.example(isPrefix, command, 'FB'), m)
          client.sendReact(m.chat, '🕒', m.key)
          let json = await Api.rexdl(text)
          if (!json.status) return client.reply(m.chat, Func.jsonFormat(json), m)
