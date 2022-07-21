@@ -12,7 +12,7 @@ exports.run = {
          client.sendReact(m.chat, '🕒', m.key)
          let json = await Api.rexdl(args[0])
          if (!json.status) return client.reply(m.chat, Func.jsonFormat(json), m)
-         let text = `乂  *M E D I A F I R E*\n\n`
+         let text = `乂  *R E X D L*\n\n`
          text += '	◦  *Name* : ' + unescape(decode(json.data.name)) + '\n'
          text += '	◦  *category* : ' + json.data.category + '\n'
          text += '	◦  *publish* : ' + json.data.publish + '\n'
@@ -21,13 +21,7 @@ exports.run = {
          text += global.footer
        //  let chSize = Func.sizeLimit(json.data.size, global.max_upload)
          
-        client.sendMessageModify(m.chat, text, m, {
-            title: '© bella mohamed v2.2.0 (Public Bot)',
-            largeThumb: true,
-            thumbnail: await Func.fetchBuffer('https://telegra.ph/file/fcf56d646aa059af84126.jpg')
-         }).then(async () => {
-           // client.sendFile(m.chat, json.data.link, unescape(decode(json.data.filename)), '', m)
-         })
+        client.reply(m.chat, text, m)
       } catch {
          return client.reply(m.chat, global.status.error, m)
       }
