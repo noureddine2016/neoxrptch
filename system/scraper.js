@@ -63,6 +63,36 @@ module.exports = class Scraper {
          }
       })
    }
+   //_________________________________________________________________________
+    quote(q) {
+      return new Promise(async (resolve, reject) => {
+         try {
+            let html = await (await axios.get('https://quotes4all.net/search-quotes?q=' + q)).data
+            let $ = cheerio.load(html)
+            let content = []
+            $('div.q-te.span').each((i, e) => content.push($(e).text()))
+ 
+            if (content.lenght == 0) return resolve({
+               creator: global.creator,
+               status: false
+            })
+            resolve({
+               creator: global.creator,
+               status: true,
+               data: {
+                  content: content[0].trim(),
+               }
+            })
+         } catch (e) {
+            console.log(e)
+            resolve({
+               creator: global.creator,
+               status: false
+            })
+         }
+      })
+   }
+   // ________________________________________________________________________
    
    /* URL Shortener
     * @param {String} url
