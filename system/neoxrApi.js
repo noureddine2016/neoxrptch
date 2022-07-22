@@ -82,7 +82,7 @@ module.exports = class NeoxrApi {
    }
    
     rxx = async (query) => {
-      let json = await Func.fetchJson(this.baseUrl + '/rexdl?q==' + query + '&apikey=' + this.apiKey)
+      let json = await Func.fetchJson(this.baseUrl + '/rexdl?q=' + query + '&apikey=' + this.apiKey)
       return json
    }
    
