@@ -21,7 +21,7 @@ exports.run = {
          dt += '	◦  *url* : ' + json.data.url + '\n\n'
        //  let chSize = Func.sizeLimit(json.data.size, global.max_upload) */
          
-        client.reply(m.chat, json, m)
+        client.reply(m.chat, json.data.url, m)
       } catch {
          return client.reply(m.chat, global.status.error, m)
       }
