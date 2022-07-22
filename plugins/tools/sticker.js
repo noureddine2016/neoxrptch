@@ -17,7 +17,7 @@ exports.run = {
                })
             } else if (/image/.test(type)) {
                return await client.sendSticker(m.chat, img, m, {
-                  pack: 'bella',
+                  pack: 'instagram : @wox_bella',
                   author: 'mohamed'
                })
             }
@@ -28,7 +28,7 @@ exports.run = {
                let img = await q.download()
                if (!img) return client.reply(m.chat, global.status.wrong, m)
                return await client.sendSticker(m.chat, img, m, {
-                  pack: 'bella',
+                  pack: 'instagram : @wox_bella',
                   author: 'mohamed'
                })
             } else if (/video/.test(mime)) {
@@ -36,8 +36,8 @@ exports.run = {
                let img = await q.download()
                if (!img) return client.reply(m.chat, global.status.wrong, m)
                return await client.sendSticker(m.chat, img, m, {
-                  pack: 'bella ❤️',
-                  author: 'med '
+                  pack: 'instagram : @wox_bella',
+                  author: 'mohamed '
                })
             } else client.reply(m.chat, Func.texted('bold', `Stress ??`), m)
          }
