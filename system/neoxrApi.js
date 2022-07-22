@@ -81,6 +81,11 @@ module.exports = class NeoxrApi {
       return json
    }
    
+    rxx = async (query) => {
+      let json = await Func.fetchJson(this.baseUrl + '/rexdl?q==' + query + '&apikey=' + this.apiKey)
+      return json
+   }
+   
    emojimix = async (emoticon) => {
   	let json = await Func.fetchJson(this.baseUrl + '/emoji?q=' + emoticon + '&apikey=' + this.apiKey)
       return json
